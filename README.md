@@ -21,12 +21,22 @@ npm i -g @nestjs/cli
 docker-compose up -d
 ```
 
-5. Reconstruir la base de datos con la semilla usando el seed enpoint
+5. Clonar el archivo __.env.template__ y renombrar la copia como __.env__
+
+6. Llenar las variables de entorno definidas
+
+7. Ejecutar en modo de escucha
+```
+yarn start:dev
+```
+
+8. Reconstruir la base de datos con la semilla usando el seed enpoint
 ```url
 http://localhost:3000/api/v1/seed
 ```
 
 
 ## Stack usado
-* Nest JS
-* Mongo DB
+* [Nest JS](https://docs.nestjs.com/)
+* [Mongo DB](https://www.mongodb.com/)
+* [Joi](https://www.npmjs.com/package/joi)
